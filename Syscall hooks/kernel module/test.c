@@ -1,7 +1,7 @@
 #include <linux/module.h>
 #include <linux/kernel.h>
 //doesn't work...
-#include <sys/syscall.h">
+#include <sys/syscall.h>
 
 //doesn't work cause include doesn't work....... 
 extern void* sys_call_table[];
