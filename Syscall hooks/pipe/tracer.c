@@ -9,9 +9,9 @@ int main() {
     int tmp;
     printf("\n");
     while (EOF != eax) {
-        //rintf("SYSCALL %d\n", eax - '0');
+        printf("SYSCALL %d\n", eax - '0');
         rdi = (getchar() - '0') * 100 + (getchar() - '0') * 10 + (getchar() - '0');
-        //printf("close() parameter - %d\n", rdi);
+        printf("close() parameter - %d\n", rdi);
         error_code = close(rdi);
         if (0 != error_code) {
             tmp = 10;
